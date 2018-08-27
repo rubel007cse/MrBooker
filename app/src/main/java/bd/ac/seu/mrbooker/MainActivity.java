@@ -35,9 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         VpAdapter adapter = new VpAdapter(getSupportFragmentManager());
+
+
         adapter.addFragment(new TodaysBookings(), "Today");
         adapter.addFragment(new TomoBookings(), "Tomorrow");
         adapter.addFragment(new ThisWeek(), "This Week");
+
+
         viewPager.setAdapter(adapter);
     }
 
