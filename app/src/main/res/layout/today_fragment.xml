@@ -2,14 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff0000"
+    android:padding="20dp"
+    android:orientation="vertical"
     >
 
-    <TextView
-        android:id="@+id/tv"
+   <EditText
+       android:id="@+id/posttitle"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Enter Post Title"/>
+
+
+    <EditText
+        android:id="@+id/postbody"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Today fragment"
+        android:layout_height="wrap_content"
+        android:hint="Enter Post Body"
+        android:lines="4"/>
+
+    <Button
+        android:id="@+id/addpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Post"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"/>
 
 </LinearLayout>

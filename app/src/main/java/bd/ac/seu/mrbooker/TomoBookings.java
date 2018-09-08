@@ -43,8 +43,10 @@ public class TomoBookings extends Fragment {
 
 
         /*Create handle for the RetrofitInstance interface*/
+
         GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
         Call<List<RetroPhoto>> call = service.getAllPhotos();
+
         call.enqueue(new Callback<List<RetroPhoto>>() {
             @Override
             public void onResponse(Call<List<RetroPhoto>> call, Response<List<RetroPhoto>> response) {

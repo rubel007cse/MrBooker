@@ -25,7 +25,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
     class CustomViewHolder extends RecyclerView.ViewHolder {
 
-        public final View mView;
+        final View mView;
 
         TextView txtTitle;
         private ImageView coverImage;
